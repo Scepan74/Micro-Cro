@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ---------------brand pallet----------------- */
+  --brand-blue: #25aae1;
+  --light-blue: #57b6df;
+  --lighter-blue: #25aae1b3;
+
+  --brand-red: #ba2935;
+  --light-red: rgba(186, 41, 53, 0.8);
+
+  --brand-green: rgb(141, 198, 63);
+  --light-green: rgba(142, 198, 63, 0.7);
+  --lighter-green: rgba(184, 241, 104, 0.8);
+
+  --brand-rezedo: #13a89e;
+  --light-rezedo: rgba(41, 250, 236, 0.5);
+
+  --brand-grey: #404041;
+  --light-grey: rgb(64, 64, 65, 0.7);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  min-width: 320px;
+  min-height: 100vh;
+  display: flex;
+  place-items: center;
+  color: #fff;
+  background: #222;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  text-decoration: none;
+}

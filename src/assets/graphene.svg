@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+  id="svg8215"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://www.w3.org/2000/svg"
+  height="374.28603"
+  width="540.23505"
+  version="1.1"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 1080.4701 748.57206"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+>
+  <defs id="defs8217">
+    <pattern
+      id="pattern8213"
+      xlink:href="#pattern7294"
+      patternTransform="translate(-303.09 756.65)"
+    />
+    <pattern
+      id="pattern7294"
+      width="108.04699"
+      patternUnits="userSpaceOnUse"
+      patternTransform="translate(3.4766e-7 -.0000015918)"
+      height="187.14288"
+    >
+      <g
+        id="g7260"
+        transform="translate(-64.732 114.28)"
+        clip-path="url(#clipPath7280)"
+      >
+        <use
+          id="use7240"
+          xlink:href="#path2820-8-8-8"
+          transform="translate(54.08 92.85)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+          fill="aqua"
+        />
+        <use
+          id="use7238"
+          xlink:href="#path2820-8-8-8"
+          transform="translate(54.11 -30.7)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+          fill="aqua"
+        />
+        <use
+          id="use7236"
+          xlink:href="#path2820-8-8-8"
+          transform="translate(108.27 62.02)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+          fill="aqua"
+        />
+        <use
+          id="use7234"
+          xlink:href="#path2820-8-8-8"
+          transform="translate(108.2)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+          fill="aqua"
+        />
+        <use
+          id="use7232"
+          xlink:href="#path2820-8-8-8"
+          transform="translate(0 61.95)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+          fill="aqua"
+        />
+        <path
+          id="path2820-8-8-8"
+          fill="aqua"
+          d="m75.303-51.242a10.708 10.708 0 1 1 -21.416 0 10.708 10.708 0 1 1 21.416 0z"
+        />
+        <path
+          id="rect3772-96-2"
+          fill="aqua"
+          d="m60.413-41.412s1.744-0.69051 4.1812-0.69051c2.4373 0 4.1812 0.69051 4.1812 0.69051v43.192s-1.802 0.55768-4.1812 0.55768c-2.3792 0-4.1812-0.55768-4.1812-0.55768z"
+        />
+        <path
+          id="rect3772-4-4-0"
+          fill="aqua"
+          d="m74.823-52.022s-1.47-1.1651-2.6886-3.2758-1.4926-3.9663-1.4926-3.9663l37.406-21.596s1.384 1.2817 2.5736 3.3422 1.6077 3.8999 1.6077 3.8999l-37.406 21.596z"
+        />
+        <path
+          id="rect3772-9-7-0-6"
+          fill="aqua"
+          d="m16.893-73.562s0.27399-1.8556 1.4926-3.9663c1.2186-2.1108 2.6886-3.2758 2.6886-3.2758l37.406 21.596s-0.41802 1.8394-1.6077 3.8999c-1.1896 2.0605-2.5736 3.3422-2.5736 3.3422l-37.41-21.6z"
+        />
+        <use
+          id="use7242"
+          xlink:href="#rect3772-96-2"
+          transform="translate(108.28)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7244"
+          xlink:href="#rect3772-96-2"
+          transform="translate(54.34 -93.43)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7246"
+          xlink:href="#rect3772-96-2"
+          transform="translate(54.39 92.81)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7248"
+          xlink:href="#rect3772-9-7-0-6"
+          transform="translate(107.8)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7250"
+          xlink:href="#rect3772-9-7-0-6"
+          transform="translate(162.2 92.5)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7252"
+          xlink:href="#rect3772-9-7-0-6"
+          transform="translate(53.934 92.8)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7254"
+          xlink:href="#rect3772-4-4-0"
+          transform="translate(54.45 92.7)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7256"
+          xlink:href="#rect3772-4-4-0"
+          transform="translate(-53.56 93.12)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+        <use
+          id="use7258"
+          xlink:href="#rect3772-4-4-0"
+          transform="translate(108.27)"
+          height="100%"
+          width="100%"
+          y="0"
+          x="0"
+        />
+      </g>
+    </pattern>
+    <clipPath id="clipPath7280" clipPathUnits="userSpaceOnUse">
+      <rect id="rect7282" height="187.14" width="108.05" y="-114.28" x="64.732" fill="#e6e6e6" />
+    </clipPath>
+    <radialGradient
+      id="radialGradient7284"
+      gradientUnits="userSpaceOnUse"
+      cy="248.98"
+      cx="211.08"
+      gradientTransform="translate(-143.69 -303.28)"
+      r="10.858"
+    >
+      <stop id="stop3596-7-3" stop-color="#8b8bad" offset="0" />
+      <stop id="stop3598-1-74" stop-color="#3e3d52" offset="1" />
+    </radialGradient>
+    <linearGradient
+      id="linearGradient7286"
+      y2="321.72"
+      gradientUnits="userSpaceOnUse"
+      x2="317.93"
+      gradientTransform="matrix(.76471 0 0 .7433 -174.23 -258.94)"
+      y1="321.72"
+      x1="306.69"
+    >
+      <stop id="stop3776-41-0" offset="0" />
+      <stop id="stop3782-13-4" stop-color="#928f90" offset=".61905" />
+      <stop id="stop3778-5-9" stop-color="#34342e" offset="1" />
+    </linearGradient>
+    <linearGradient
+      id="linearGradient7288"
+      y2="321.72"
+      gradientUnits="userSpaceOnUse"
+      x2="317.93"
+      gradientTransform="matrix(-.38235 -.66225 .64372 -.37165 3.753 259.91)"
+      y1="321.72"
+      x1="306.69"
+    >
+      <stop id="stop3776-60-9-1" offset="0" />
+      <stop id="stop3782-4-90-6" stop-color="#928f90" offset=".61905" />
+      <stop id="stop3778-10-76-1" stop-color="#34342e" offset="1" />
+    </linearGradient>
+    <linearGradient
+      id="linearGradient7290"
+      y2="321.72"
+      gradientUnits="userSpaceOnUse"
+      x2="317.93"
+      gradientTransform="matrix(.38235 -.66225 .64372 .37165 -288.82 20.878)"
+      y1="321.72"
+      x1="306.69"
+    >
+      <stop id="stop3776-83-4-7-0" offset="0" />
+      <stop id="stop3782-0-31-6-2" stop-color="#928f90" offset=".61905" />
+      <stop id="stop3778-17-4-9-9" stop-color="#34342e" offset="1" />
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(151.545 -97.61) scale(0.5)">
+    <rect
+      id="rect7292"
+      height="748.5714"
+      width="2160.94"
+      y="195.22"
+      x="-303.09"
+      fill="url(#pattern8213)"
+    />
+  </g>
+</svg>
