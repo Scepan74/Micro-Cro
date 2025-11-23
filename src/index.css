@@ -13,6 +13,7 @@
   --brand-blue: #25aae1;
   --light-blue: #57b6df;
   --lighter-blue: #25aae1b3;
+  --dark-blue: #1a3642;
 
   --brand-red: #ba2935;
   --light-red: rgba(186, 41, 53, 0.8);
@@ -29,6 +30,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,12 +40,30 @@ body {
   min-height: 100vh;
   display: flex;
   place-items: center;
-  color: #fff;
   background: #222;
+  color: var(--light-grey);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 a {
   text-decoration: none;
+}
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-weight: 600;
+}
+li {
+  font-size: 1rem;
+  font-weight: 600;
 }

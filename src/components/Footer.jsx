@@ -1,19 +1,22 @@
 import { FaLinkedin } from "react-icons/fa";
 import { PiMicrosoftTeamsLogoFill } from "react-icons/pi";
 import logo from "../assets/micrologo.png";
-import pick from "../assets/pick.jpg";
+import shake from "../assets/shake.jpg";
 
 const Footer = () => {
   return (
-    <footer className="stack-section">
+    <footer
+    //  className="stack-section"
+    >
+      <div className="blanc-layer"></div>
       <h2 id="footer-text">
         <img id="footer-logo" src={logo} alt="logo" /> has a solution for any
-        clinical trial challenge. We look forward to our collaboration in the
-        near future.
+        clinical trial challenge. <br />
+        We look forward to our collaboration in the near future.
       </h2>
 
       <div className="footer-img-container">
-        <img src={pick} alt="pick" />
+        <img src={shake} alt="shake" />
       </div>
 
       <div id="footer-container">
@@ -65,10 +68,18 @@ const Footer = () => {
           </a>
         </div>
 
-        <a className="mail" href="mailto:email@example.com">
+        <a
+          className="mail"
+          href="mailto:office@microcro.com?subject=Contact&body="
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           office@microcro.com
         </a>
       </div>
+      {/* <div id="made-by">
+        <small>&copy; 2023 Web Art Forge</small>
+      </div> */}
     </footer>
   );
 };

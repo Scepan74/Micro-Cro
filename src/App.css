@@ -1,16 +1,18 @@
 main {
-  position: fixed;
+  position: relative;
   top: 0;
   overflow-y: auto;
   overflow-x: hidden;
   height: 100vh;
   width: 100vw;
   background-color: #57b6df;
+  z-index: 1;
 }
+
 .hex-bcg {
-  position: absolute;
+  position: fixed;
   top: 0;
-  height: 800vh;
+  height: 100vh;
   width: 100vw;
   background: transparent url("./assets/backhex.png") left top repeat;
   background-size: 130px 90px;
@@ -19,7 +21,7 @@ main {
 /* --------------------BlueWhale--------------- */
 .wrapper {
   position: fixed;
-  height: 800vh;
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   background-color: transparent;
@@ -76,22 +78,25 @@ main {
 /* --------------------------------------------- */
 .stack-section {
   position: sticky;
-  top: 0;
+  top: 1rem;
   left: 0;
   right: 0;
-  margin: 0 auto;
-  height: 100vh;
+  margin: 1.8rem auto;
+  height: calc(100vh - 1.5rem);
   max-width: 1024px;
-  border-top: 2px solid var(--brand-green);
+  border-radius: 15px;
 }
+
 .stack-section p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--brand-grey);
+  /* font-size: 1rem; */
+
+  /* color: var(--brand-grey); */
   padding: 0.5vw 6vw;
 }
+
 header {
-  margin-bottom: 0.15rem;
+  position: relative;
+  margin-top: 0.6rem;
 }
 .header-bcg {
   position: absolute;
@@ -100,6 +105,7 @@ header {
   height: 2rem;
   background: url(./assets/mainbg.jpg) center center/cover no-repeat;
   opacity: 0.6;
+  border-radius: 12px;
 }
 .header-elements {
   position: relative;
@@ -118,9 +124,58 @@ header {
   color: var(--brand-grey);
   font-family: "Exo 2", sans-serif;
   font-size: medium;
-  font-weight: 300;
+  font-weight: 400;
 }
 
+/* -------------------LANDING-----------------------  */
+#landing {
+  position: relative;
+  max-width: 1024px;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  height: calc(100vh - 3.5rem);
+  border-radius: 15px;
+  opacity: 0.8;
+  background-color: silver;
+}
+#landing-img {
+  width: 100%;
+  max-width: 1024px;
+  height: calc(100vh - 3.5rem);
+  object-fit: cover;
+  object-position: 70% bottom;
+}
+#quote {
+  position: absolute;
+  top: 70vh;
+  left: 0;
+  right: 0;
+  margin: 0 8vw 0 auto;
+  max-width: 23rem;
+  filter: blur(5px);
+  animation: clear 3s linear forwards;
+}
+@keyframes clear {
+  0% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}
+#quote > h2 {
+  display: inline-block;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  font-optical-sizing: auto;
+  /* font-size: 1.8rem; */
+  color: var(--brand-red);
+  text-align: center;
+  /* white-space: no-wrap; */
+}
 /* ----------------nav------------------------ */
 
 nav {
@@ -201,64 +256,23 @@ nav {
 }
 /* ------------------------------------------- */
 
-/* -------------------landing-----------------------  */
-#landing {
-  position: relative;
-  max-width: 1024px;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  overflow: hidden;
-  height: calc(100vh - 2rem);
-  margin-bottom: -0.1rem;
-}
-#landing-img {
-  width: 100%;
-  max-width: 1024px;
-  height: calc(100vh - 2rem);
-  object-fit: cover;
-  object-position: 70% bottom;
-}
-#quote {
-  position: absolute;
-  top: 70vh;
-  left: 0;
-  right: 0;
-  margin: 0 8vw 0 auto;
-  max-width: 23rem;
-  filter: blur(5px);
-  animation: clear 3s linear forwards;
-}
-@keyframes clear {
-  0% {
-    filter: blur(5px);
-  }
-  100% {
-    filter: blur(0);
-  }
-}
-#quote > h3 {
-  display: inline-block;
-  font-family: "Exo 2", sans-serif;
-  font-weight: 200;
-  font-optical-sizing: auto;
-  font-size: 1.8rem;
-  color: var(--brand-red);
-  text-align: center;
-  /* white-space: no-wrap; */
-}
-
-#landing-about {
-  height: 100vh;
+/* -------- ABOUT-------- */
+#about {
   background-color: var(--lighter-blue);
-  padding: 0.5rem 0;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.top-about {
+  margin-bottom: -2rem;
 }
 #landing-logo {
   margin-right: -2rem;
 }
-#landing-about > p {
-  font-weight: 400;
+#about > p {
+  font-weight: 500;
 }
 .advantages-container {
   height: 115vw;
@@ -300,9 +314,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--light-grey);
+  /* color: var(--light-grey); */
   padding: 0;
   margin: 0 0 0.5rem 0.5rem;
 }
@@ -324,55 +336,67 @@ nav {
   border-radius: 0.3rem;
   opacity: 0.8;
 }
+.bottom-about {
+  margin-top: -2rem;
+  /* border: 1px solid red; */
+}
 /* --------------BECAUSE---------------- */
 #section-because {
   background-color: #40d7e5;
-  color: var(--light-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+.top-because {
+  margin-bottom: 1rem;
+  /* border: 1px solid red; */
+}
+
 #title-because {
-  font-size: 2.5rem;
-  font-weight: 100;
-  color: var(--lighter-green);
-  text-shadow: 2px 2px 4px var(--brand-blue), -2px -2px 4px var(--brand-blue),
-    0px 0px 8px var(--brand-blue);
   margin: 2vw 0 2vw 12vw;
 }
 
+.ampule-container {
+  width: 100%;
+  height: 35%;
+}
 .ampule-container > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: 0 69%;
 }
-.because-excell {
-  list-style-type: "- ";
-  color: var(--brand-grey);
-  font-weight: 400;
-  margin: 3vw auto 0;
-}
+/* .bottom-because {
+} */
+
 #excell-title {
-  font-size: 2rem;
-  color: var(--lighter-green);
-  text-shadow: 2px 2px 4px var(--brand-blue), -2px -2px 4px var(--brand-blue),
-    0px 0px 8px var(--brand-blue);
+  font-weight: 200;
+  margin: 0 0 0 6vw;
+}
+.because-excell {
+  display: block;
+  width: fit-content;
+  list-style-type: "-  ";
+  /* color: var(--brand-grey); */
+  margin: 1vw auto 5vw;
 }
 .because-excell li {
   line-height: 1.8rem;
 }
-
+/* -----AREAS----- */
 #section-areas {
   background-color: rgb(87, 182, 223);
-  color: var(--light-grey);
+  /* color: var(--light-grey); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
+/* .top-areas {
+} */
 #areas-title {
   width: fit-content;
-  font-size: 1.3rem;
-  margin: 4vw auto;
-  font-weight: 400;
-  color: var(--brand-green);
-  text-shadow: 2px 2px 4px var(--lighter-blue),
-    -2px -2px 4px var(--lighter-blue), 0px 0px 8px var(--lighter-blue);
+  margin: 4vh auto;
 }
 
 .areas {
@@ -383,7 +407,7 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
   gap: 3vw;
-  margin: 0 auto 3vw;
+  margin: 0 auto;
 }
 .areas-item {
   width: 9.5rem;
@@ -412,20 +436,28 @@ nav {
 #gastro img {
   margin: 0 -0.4rem 0 -0;
 }
-
+.bottom-areas {
+  padding: 2vh 0 4vh;
+}
+.bottom-areas p {
+  font-weight: 500;
+}
 /* ---------------SERVICES-------------- */
 
 #section-services {
-  background-color: #1a3642;
+  background-color: var(--dark-blue);
+  height: calc(100vh - 3.5rem);
+  margin-bottom: 2rem;
+  padding-top: 9vh;
 }
 #title-services {
-  font-size: 2.5rem;
-  font-weight: 100;
+  display: block;
+  margin-left: 12vw;
+  width: fit-content;
   color: var(--light-rezedo);
   font-family: "Exo 2", sans-serif;
   text-transform: capitalize;
-  margin: 2vw 0 2vw 12vw;
-  z-index: 100;
+  /* z-index: 100; */
 }
 #services-container {
   position: absolute;
@@ -437,11 +469,19 @@ nav {
   width: 100%;
   max-width: 870px;
   height: 61.5vh;
-
-  background: url("./assets/serv-back.jpg") no-repeat center center/ cover;
-  z-index: 1;
-  border: 1px solid red;
+  border: 2px solid red;
   border-radius: 30px;
+  background-color: transparent;
+  overflow: hidden;
+}
+#services-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 61.5vh;
+  background: url("./assets/serv-back.jpg") no-repeat center center/ cover;
 }
 #hex {
   position: absolute;
@@ -455,7 +495,7 @@ nav {
   background: url("./assets/hex.png") no-repeat center / cover;
   border-radius: 50%;
   animation: spin 50s linear infinite;
-  z-index: 0;
+  /* z-index: 0; */
 }
 
 #hex:hover,
@@ -473,13 +513,13 @@ nav {
 
 .subtitle {
   position: absolute;
-  width: 6.7rem;
-  height: 6.4rem;
+  width: 9rem;
+  height: fit-content;
   text-align: center;
-  padding: 2.5rem 0;
-  font-size: 0.75rem;
+  /* padding: 2.7rem 0; */
+  font-size: 1rem;
   font-family: "Exo 2", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-optical-sizing: auto;
   animation: antispin 50s linear infinite;
   cursor: pointer;
@@ -487,35 +527,36 @@ nav {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.95),
     -2px -2px 4px rgba(0, 0, 0, 0.95), 0px 0px 8px rgba(0, 0, 0, 0.8),
     2px -2px 4px rgba(0, 0, 0, 0.95), -2px 2px 4px rgba(0, 0, 0, 0.95);
+  /* border: 1px solid red; */
 }
 
 #subtitle1 {
-  top: 0.7rem;
-  left: 7.4rem;
+  top: 4.1rem;
+  left: 9.3rem;
 }
 #subtitle2 {
-  top: 4.2rem;
-  left: 13.3rem;
+  top: 8.5rem;
+  left: 16.8rem;
 }
 #subtitle3 {
-  top: 11.1rem;
-  left: 13.3rem;
+  top: 17.4rem;
+  left: 16.8rem;
 }
 #subtitle4 {
-  top: 14.5rem;
-  left: 7.3rem;
+  top: 21.8rem;
+  left: 9.3rem;
 }
 #subtitle5 {
-  top: 11rem;
-  left: 1.4rem;
+  top: 17.4rem;
+  left: 1.5rem;
 }
 #subtitle6 {
-  top: 4.1rem;
-  left: 1.4rem;
+  top: 8.5rem;
+  left: 1.5rem;
 }
 #subtitle7 {
-  top: 7.6rem;
-  left: 7.4rem;
+  top: 12.9rem;
+  left: 9.2rem;
 }
 @keyframes antispin {
   from {
@@ -542,18 +583,18 @@ nav {
 
 .modal {
   position: absolute;
-  top: 0;
+  top: -2.2rem;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   width: 20rem;
-  height: 17.3rem;
+  height: 17rem;
   background: var(--brand-blue);
-  opacity: 0.9;
-  color: var(--brand-grey);
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  opacity: 0.95;
+  color: var(--dark-blue);
   text-align: center;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 .cls-btn {
   position: absolute;
@@ -572,7 +613,6 @@ nav {
 .modal h3 {
   margin: 1.5rem auto 0.5rem;
   width: 10.5rem;
-  font-weight: 600;
   padding: 0 5px;
   border-radius: 5px;
   cursor: pointer;
@@ -604,16 +644,18 @@ nav {
 }
 .modal h3:hover,
 .modal li:hover {
-  font-weight: 600;
+  font-weight: 100;
+  color: var(--brand-red);
+  color: white;
 }
 
 .submodal {
   position: absolute;
-  width: 16rem;
-  height: 16rem;
+  width: 17rem;
+  height: 17rem;
   padding: 1rem 1rem 0;
   background-color: var(--brand-blue);
-  opacity: 0.9;
+  opacity: 0.95;
   border-radius: 50%;
   box-shadow: 0px 0px 10px var(--brand-blue);
   z-index: 10;
@@ -624,16 +666,16 @@ nav {
   width: 12rem;
   margin: 0 auto;
   text-align: center;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.8rem;
   line-height: 1.18rem;
-  color: var(--brand-grey);
+  color: var(--dark-blue);
 }
 .submodal h3 {
   width: 10.8rem;
   text-transform: capitalize;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   background-color: var(--light-blue);
   padding: 0 5px;
   margin: 1rem auto 0.4rem;
@@ -642,39 +684,61 @@ nav {
 /* -------------FOOTER----------------- */
 footer {
   position: sticky;
-  top: 0;
-  height: 100vh;
-  color: var(--light-grey);
-  margin-bottom: -50vh !important;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  max-width: 1024px;
+  border-radius: 15px;
+  height: calc(100vh - 3.5rem);
+  margin: 0 auto 2rem;
+  background-color: #fff;
 }
-
+.blanc-layer {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  max-width: 1024px;
+  height: calc(100vh - 3.5rem);
+  background: url("./assets/bubbly.jpg") no-repeat center center/ cover;
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 15px;
+}
 #footer-text {
   width: 100%;
-  height: calc(30vh - 0.2rem);
-  padding: 4vw 8vw;
-  background: url("./assets/bubbly.jpg") no-repeat center center/ cover;
+  max-width: 1024px;
+  height: 28vh;
+  padding: 4vw 10vw;
   font-family: "Exo 2", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-optical-sizing: auto;
   font-size: 1.5rem;
   color: var(--brand-red);
+  margin: 0 auto;
 }
 #footer-logo {
   width: 7rem;
   margin-right: -0.5rem;
 }
 .footer-img-container {
-  height: 37.4vh;
+  height: 35.4vh;
+  width: 100%;
+  display: flex;
+  place-content: center;
 }
 .footer-img-container img {
-  height: 100%;
   width: 100%;
-  object-position: 20% 45%;
+  max-width: 800px;
+  height: auto;
+  display: block;
   object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
 }
 #footer-container {
   height: 30vh;
-  background: url("./assets/bubbly.jpg") no-repeat center center/ cover;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -697,8 +761,8 @@ footer {
   padding-left: 0;
 }
 .hireus-container {
-  width: 5rem;
-  height: 5rem;
+  width: 6.9rem;
+  height: 6.9rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -709,7 +773,8 @@ footer {
   border-radius: 50%;
   padding: 1rem;
   cursor: pointer;
-  margin: 0 25vw 0 2vw;
+
+  margin: 0 23vw 0 4vw;
   border: 1px solid var(--brand-blue);
 }
 .hireus-container:hover {
@@ -740,6 +805,7 @@ footer {
   position: absolute;
   right: 10vw;
   font-size: large;
+  font-weight: 400;
   color: var(--brand-red);
   margin-top: 10rem;
   cursor: pointer;
@@ -748,33 +814,35 @@ footer {
   position: absolute;
   width: 100vw;
   height: 1.5rem;
-  margin-top: 47.3vh;
   padding: 2px 0;
+  border-radius: 10px;
   background-color: var(--brand-grey);
-  font-size: smaller;
+  font-size: small;
   color: #c4c7c7;
   text-align: center;
-  z-index: 1;
+  z-index: 100;
 }
+
 /* xxxxxxxxxxxxxRESPONSIVExxxxxxxxxxxxx */
-/* --------------phone-------------- */
+/* ----------phone-------- */
 @media screen and (max-width: 480px) {
-  main {
-    position: relative;
+  h1 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
   }
   .stack-section {
     position: relative;
-    overflow: hidden;
+    height: fit-content;
+    margin: 0.8rem auto 0;
   }
-  .hex-bcg {
-    background: rgb(3, 250, 250) url("./assets/backhex.png") left top repeat;
-    background-size: 130px 90px;
-    height: 600vh;
-    opacity: 0.1;
-    z-index: 1;
+  /* -------------landing------------ */
+  #quote {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    top: 67vh;
   }
-  .wrapper {
-    height: 500vh;
+  #quote > h3 {
+    font-size: 1.7rem;
   }
   nav {
     top: 45vh;
@@ -793,92 +861,81 @@ footer {
     --position2: calc(50vw + 6rem);
     --position3: calc(50vw + 8rem);
   }
-  #landing {
-    z-index: 5;
+  /* -----------about----------- */
+  .top-about {
+    margin-bottom: 0;
   }
-  #quote {
-    margin: 0 auto;
-    padding: 0 0.5rem;
-    top: 67vh;
-  }
-  #quote > h3 {
-    font-size: 1.7rem;
-  }
-  .advantages-container {
-    height: 37vh;
-  }
-  .advantages {
-    height: 37vh;
-    gap: 0.5rem;
-    z-index: 5;
-  }
-
-  .tete-container {
-    width: fit-content;
-    height: 37vh;
-    border-radius: 0.3rem;
-    z-index: 5;
-  }
-  .box {
-    height: 11.2vh;
-    max-width: 11rem;
-    font-size: 0.8rem;
-  }
-  .box > ul {
-    line-height: 1rem;
-  }
-  .box > ul > li {
-    font-size: 0.8rem;
-    margin: 0.2rem 0;
-    /* border: 1px solid red; */
-  }
-  #tete {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right 50%;
-    border-radius: 0.3rem;
-  }
-  #section-because {
-    height: fit-content;
-    padding-bottom: 2rem;
-  }
-  #title-because,
-  #excell-title,
-  #areas-title {
-    color: white;
-  }
-  .ampule-container {
-    height: 30vh;
-    margin: 0 auto 3vh;
-  }
-  .because-excell {
-    width: 13rem;
-  }
-  #excell-title {
-    font-size: 1.3rem;
-  }
-  #section-areas {
-    height: fit-content;
-    padding-bottom: 2rem;
+  .bottom-about {
+    margin-top: 0;
   }
 
   /* ---------services----------- */
   #section-services {
-    height: 110vh;
-    padding-bottom: 2rem;
+    height: 100vh;
+    /* padding-top: 9vh; */
+
+    /* padding-bottom: 2rem; */
   }
   #services-container {
-    border: none;
-    min-height: 73vh;
+    top: -5vh;
+    width: 98vw;
+    height: 29.4rem;
   }
+  #services-background {
+    background-size: 240%;
+  }
+  #hex {
+    width: 92vw !important;
+    height: 92vw !important;
+  }
+  .modal {
+    width: 20.3rem;
+    height: 17.4rem;
+    /* width: 90vw; */
+    /* height: 78vw; */
+  }
+  .subtitle {
+    width: 30vw;
+    height: fit-content;
+    text-align: center;
+    font-size: 3.3vw;
+  }
+  #subtitle1 {
+    top: 14vw;
+    left: 31vw;
+  }
+  #subtitle2 {
+    top: 28.5vw;
+    left: 56.5vw;
+  }
+  #subtitle3 {
+    top: 58vw;
+    left: 56.5vw;
+  }
+  #subtitle4 {
+    top: 73vw;
+    left: 30.5vw;
+  }
+  #subtitle5 {
+    top: 58vw;
+    left: 5.3vw;
+  }
+  #subtitle6 {
+    top: 28.5vw;
+    left: 5.3vw;
+  }
+  #subtitle7 {
+    top: 43.1vw;
+    left: 30.7vw;
+  }
+
   .submodal {
-    top: 30rem !important;
+    top: 31.6rem !important;
     left: 0 !important;
     right: 0;
     margin: auto;
-    padding: 1rem;
-    width: 16rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    width: 18rem;
     height: fit-content;
     border-radius: 5px;
   }
@@ -886,33 +943,40 @@ footer {
     top: 0.3rem;
   }
   .submodal h3 {
-    margin: 0.5rem auto 0.4rem;
+    width: 12rem;
+    margin: 1.2rem auto 0.2rem;
   }
   .submodal p {
-    width: 14rem;
+    width: 18rem;
     font-size: 0.9rem;
-    padding: 0;
+    text-align: unset;
+    padding: 1vh 5vh;
   }
   /*------------footer------------- */
   footer {
-    position: static;
-    margin-bottom: 0;
+    margin: 1.8rem auto 1rem;
+    height: 92.5vh;
     z-index: 5;
   }
   #footer-text {
-    height: calc(35vh - 0.2rem);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
-  .footer-img-container {
-    height: 32.6vh;
+
+  .hireus-container {
+    width: 23vw;
+    height: 23vw;
+    margin: 0 23vw 0 4vw;
   }
 }
+
 /* --------------tablet-------------- */
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .stack-section {
-    margin-bottom: 50vh;
+  h1 {
+    font-size: 2.5rem;
   }
   nav {
-    top: calc(70vh - 37vw);
+    top: calc(70vh - 39.5vw);
   }
   #nav-why {
     --position1: 17rem;
@@ -928,27 +992,67 @@ footer {
     --position2: 21rem;
     --position3: 23rem;
   }
-
-  .ampule-container {
-    height: 30vh;
-    margin: 0 auto 3vh;
+  /* -----------about----------- */
+  #about {
+    padding: 0;
   }
-  .because-excell {
-    width: 13rem;
+  .top-about {
+    margin-bottom: 0;
   }
-  #excell-title {
-    font-size: 1.3rem;
+  .bottom-about {
+    margin-top: 0;
   }
-
+  /* -----------areas----------- */
+  #areas-title {
+    margin: 2vh auto 1vh;
+  }
   /* ---------services----------- */
   #section-services {
-    height: 100vh;
-    padding-bottom: 2rem;
+    margin-bottom: 1.3rem;
+    padding-top: 1vh;
   }
   #services-container {
-    min-height: 69vh;
+    top: -11vh;
+    width: 98vw;
+    height: 29.4rem;
+  }
+  #services-background {
+    height: 39.5rem;
+  }
+  #hex {
+    width: 27.5rem;
+    height: 27.5rem;
+  }
+
+  .modal-container {
+    top: -7vh;
   }
   .submodal {
+    top: 66vh !important;
+    left: 0 !important;
+    right: 0;
+    margin: auto;
+    width: 18rem;
+    height: fit-content;
+    padding: 1vh 1vh 0;
+    padding: 0;
+    border-radius: 5px;
+  }
+  .cls-btn {
+    top: 0.3rem;
+  }
+  .submodal h3 {
+    margin: 1.2rem auto 0.2rem;
+  }
+  .submodal p {
+    width: 18rem;
+    text-align: unset;
+    padding: 1vh 5vh;
+
+    font-size: 0.9rem;
+    /* border: 1px solid red; */
+  }
+  /* .submodal {
     top: 30rem !important;
     left: 0 !important;
     right: 0;
@@ -969,15 +1073,38 @@ footer {
     font-size: 0.9rem;
     padding: 0;
   }
+      footer {
+    margin: 1.8rem auto 1rem;
+    height: 92.5vh;
+    z-index: 5;
+  }
+  #footer-text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+ */
+  /* ------------footer----------- */
+  footer {
+    margin: 1.8rem auto 1rem;
+    height: 92.5vh;
+    z-index: 5;
+  }
+  #footer-text {
+    /* font-size: 1.2rem; */
+    font-size: 4vw;
+    line-height: 4.5vw;
+    padding: 2rem 12vw;
+    /* border: 1px solid red; */
+  }
 }
 
-/*------------desktop--------------*/
+/* ------------desktop-------------- */
 @media screen and (min-width: 768px) {
-  .stack-section {
-    margin-bottom: 50vh;
+  h1 {
+    font-size: 4rem;
   }
   nav {
-    top: 34.5vh;
+    top: 30.2vh;
   }
   #nav-why {
     --position1: 17rem;
@@ -993,7 +1120,7 @@ footer {
     --position2: 21rem;
     --position3: 23rem;
   }
-  .advantages-container {
+  /*  .advantages-container {
     margin: 2rem auto;
   }
   .box > ul > li {
@@ -1011,23 +1138,56 @@ footer {
     opacity: 0.8;
   }
 
-  .ampule-container {
-    height: 30vh;
-    margin: 0 auto 3vh;
-  }
+ 
   .because-excell {
     width: 13rem;
   }
-  #excell-title {
-    font-size: 1.3rem;
-    margin-bottom: -2rem;
-  }
   .areas {
     gap: 1.5rem;
-  }
+*/
 
   /* ---------services----------- */
+
+  #section-services {
+    margin-bottom: 1.3rem;
+    padding-top: 4vh;
+  }
   #services-container {
+    /* background-size: 240%; */
+    width: 98vw;
+    height: 29.4rem;
+  }
+  #services-background {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 39.5rem;
+  }
+  #hex {
+    width: 27.5rem;
+    height: 27.5rem;
+  }
+  .modal-container {
+    top: -0.7rem;
+  }
+  .submodal p {
+    padding: 0;
+    /* text-align: unset; */
+  }
+  /* -------------footer--------*/
+  /* footer {
+    margin: 1.8rem auto 1rem;
+    height: 92.5vh;
+    z-index: 5;
+  } */
+  #footer-text {
+    font-size: 1.9rem;
+    line-height: 2.1rem;
+    padding: 2rem 12vw;
+  }
+
+  /* border: 1px solid red; */
+  /* #services-container {
     min-height: 69vh;
   }
   .submodal {
@@ -1048,5 +1208,11 @@ footer {
     padding: 0;
     margin-left: -0.7rem;
   }
-  /*------------footer------------- */
+*/
+}
+@media screen and (min-width: 1024px) {
+  .hireus-container {
+    margin: 0 14.7rem 0 2.5rem;
+    margin: 0 20rem 0 0;
+  }
 }
