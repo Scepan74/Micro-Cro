@@ -156,7 +156,7 @@ header {
   margin: 0 8vw 0 auto;
   max-width: 23rem;
   filter: blur(5px);
-  animation: clear 3s linear forwards;
+  animation: clear 4s linear forwards;
 }
 @keyframes clear {
   0% {
@@ -197,7 +197,7 @@ nav {
   font-size: large;
   padding: 0.5rem;
   color: white;
-  opacity: 0.6;
+  opacity: 0.8;
   border-radius: 5px;
   cursor: pointer;
   z-index: 10;
@@ -259,30 +259,30 @@ nav {
 /* -------- ABOUT-------- */
 #about {
   background-color: var(--lighter-blue);
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
 }
 .top-about {
-  margin-bottom: -2rem;
+  margin-top: -1.5rem;
 }
 #landing-logo {
   margin-right: -2rem;
 }
-#about > p {
+/* #about > p {
   font-weight: 500;
-}
+} */
 .advantages-container {
-  height: 115vw;
+  /* height: 115vw; */
   max-height: 55vh;
   width: 88vw;
   max-width: 55rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
-  margin: 4vw auto;
+  margin: 0 auto 2rem;
 }
 .advantages {
   height: 100%;
@@ -290,7 +290,8 @@ nav {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  /* gap:1.2rem; */
+  gap: 1.5vh;
   justify-content: space-between;
 }
 
@@ -299,8 +300,9 @@ nav {
   max-width: 20rem;
   background: var(--lighter-blue);
   border: 1px solid var(--lighter-green);
+  /* height: 112vh; */
   border-radius: 5px;
-  height: 17vh;
+  /* max-height: 15vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -349,16 +351,16 @@ nav {
 }
 .top-because {
   margin-bottom: 1rem;
-  /* border: 1px solid red; */
 }
 
 #title-because {
-  margin: 2vw 0 2vw 12vw;
+  margin: 0 0 0 12vw;
 }
 
 .ampule-container {
   width: 100%;
-  height: 35%;
+  height: 34%;
+  margin-bottom: 1rem;
 }
 .ampule-container > img {
   width: 100%;
@@ -371,13 +373,13 @@ nav {
 
 #excell-title {
   font-weight: 200;
-  margin: 0 0 0 6vw;
+  margin: 0 0 -1rem 6vw;
 }
 .because-excell {
   display: block;
   width: fit-content;
   list-style-type: "-  ";
-  /* color: var(--brand-grey); */
+  /* color: red; */
   margin: 1vw auto 5vw;
 }
 .because-excell li {
@@ -448,7 +450,7 @@ nav {
   background-color: var(--dark-blue);
   height: calc(100vh - 3.5rem);
   margin-bottom: 2rem;
-  padding-top: 9vh;
+  /* padding-top: 9vh; */
 }
 #title-services {
   display: block;
@@ -461,7 +463,7 @@ nav {
 }
 #services-container {
   position: absolute;
-  top: 0;
+  top: 10%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -839,10 +841,11 @@ footer {
   #quote {
     margin: 0 auto;
     padding: 0 0.5rem;
-    top: 67vh;
+    top: 69vh;
   }
-  #quote > h3 {
+  #quote > h2 {
     font-size: 1.7rem;
+    color: green;
   }
   nav {
     top: 45vh;
@@ -863,18 +866,29 @@ footer {
   }
   /* -----------about----------- */
   .top-about {
-    margin-bottom: 0;
+    margin: 0 auto 1rem;
   }
   .bottom-about {
-    margin-top: 0;
+    margin-top: -1rem;
+    padding-bottom: 2rem;
   }
-
+  /* -----------because------------ */
+  .top-because {
+    margin-top: 1rem;
+  }
+  /* ----------areas--------------- */
+  #areas-title {
+    margin-top: 1rem;
+  }
   /* ---------services----------- */
   #section-services {
     height: 100vh;
     /* padding-top: 9vh; */
 
     /* padding-bottom: 2rem; */
+  }
+  #title-services {
+    padding-top: 1rem;
   }
   #services-container {
     top: -5vh;
@@ -996,11 +1010,23 @@ footer {
   #about {
     padding: 0;
   }
+
   .top-about {
-    margin-bottom: 0;
+    margin: 0 auto 1rem;
+  }
+  .advantages-container {
+    height: 48vh;
+  }
+  .box {
+    height: 6.2rem;
+    padding: 0.5rem;
+  }
+  .box > ul {
+    line-height: 1rem;
   }
   .bottom-about {
-    margin-top: 0;
+    margin-top: -1rem;
+    padding-bottom: 2rem;
   }
   /* -----------areas----------- */
   #areas-title {
@@ -1150,7 +1176,7 @@ footer {
 
   #section-services {
     margin-bottom: 1.3rem;
-    padding-top: 4vh;
+    padding-top: 0.5rem;
   }
   #services-container {
     /* background-size: 240%; */
