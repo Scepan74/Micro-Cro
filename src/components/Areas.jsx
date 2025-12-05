@@ -60,15 +60,13 @@ const Areas = () => {
       <div className="bottom-areas">
         <p>
           Regardless of your level of experience and/or resources, we remain
-          equally meticulous and rigorous in performance. Our team will guide
-          you through every step of the process. Our sponsors are encouraged to
-          address any issue or request for clarification down the road, from the
-          startup to the closeout.
-          <br />
-          Micro promotes development of ongoing communication. We optimize it
-          into a solid monitoring program that gives the sponsor 24/7/365 access
-          to enrolment and compliance. Our veteran CRA team, as the primary
-          controlers, secures data integrity and maintains farmcovigilance.
+          equally meticulous in our performance. Micro promotes ongoing
+          communication. You will be encouraged to address any issue or need for
+          clarification throughout whole course. Assistence will be provided
+          with each and every step of the process so we optimize it into a solid
+          monitoring program providing 24/7/365 access to enrolment and
+          compliance. Our veteran CRA team maintains data integrity, security
+          and farmcovigilance.
         </p>
       </div>
     </section>

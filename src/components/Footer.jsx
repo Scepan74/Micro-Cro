@@ -5,9 +5,7 @@ import shake from "../assets/shake.jpg";
 
 const Footer = () => {
   return (
-    <footer
-    //  className="stack-section"
-    >
+    <footer className="stack-section">
       <div className="blanc-layer"></div>
       <h2 id="footer-text">
         <img id="footer-logo" src={logo} alt="logo" /> has a solution for any

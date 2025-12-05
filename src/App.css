@@ -78,25 +78,22 @@ main {
 /* --------------------------------------------- */
 .stack-section {
   position: sticky;
-  top: 1rem;
+  top: 0.8rem;
   left: 0;
   right: 0;
-  margin: 1.8rem auto;
-  height: calc(100vh - 1.5rem);
+  margin: 1rem auto 0;
+  height: calc(100vh - 1.7rem);
   max-width: 1024px;
   border-radius: 15px;
 }
 
 .stack-section p {
-  /* font-size: 1rem; */
-
-  /* color: var(--brand-grey); */
   padding: 0.5vw 6vw;
 }
 
 header {
   position: relative;
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
 }
 .header-bcg {
   position: absolute;
@@ -130,13 +127,13 @@ header {
 /* -------------------LANDING-----------------------  */
 #landing {
   position: relative;
-  max-width: 1024px;
-  top: 1rem;
+  top: 0.9rem;
   left: 0;
   right: 0;
-  margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 auto 1.8rem;
   overflow: hidden;
-  height: calc(100vh - 3.5rem);
+  height: calc(100vh - 4rem);
   border-radius: 15px;
   opacity: 0.8;
   background-color: silver;
@@ -146,7 +143,7 @@ header {
   max-width: 1024px;
   height: calc(100vh - 3.5rem);
   object-fit: cover;
-  object-position: 70% bottom;
+  object-position: 70% top;
 }
 #quote {
   position: absolute;
@@ -171,10 +168,8 @@ header {
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
   font-optical-sizing: auto;
-  /* font-size: 1.8rem; */
   color: var(--brand-red);
   text-align: center;
-  /* white-space: no-wrap; */
 }
 /* ----------------nav------------------------ */
 
@@ -259,7 +254,6 @@ nav {
 /* -------- ABOUT-------- */
 #about {
   background-color: var(--lighter-blue);
-  /* padding: 2rem 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -271,11 +265,8 @@ nav {
 #landing-logo {
   margin-right: -2rem;
 }
-/* #about > p {
-  font-weight: 500;
-} */
+
 .advantages-container {
-  /* height: 115vw; */
   max-height: 55vh;
   width: 88vw;
   max-width: 55rem;
@@ -290,7 +281,6 @@ nav {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  /* gap:1.2rem; */
   gap: 1.5vh;
   justify-content: space-between;
 }
@@ -300,9 +290,7 @@ nav {
   max-width: 20rem;
   background: var(--lighter-blue);
   border: 1px solid var(--lighter-green);
-  /* height: 112vh; */
   border-radius: 5px;
-  /* max-height: 15vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +304,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /* color: var(--light-grey); */
   padding: 0;
   margin: 0 0 0.5rem 0.5rem;
 }
@@ -340,7 +327,6 @@ nav {
 }
 .bottom-about {
   margin-top: -2rem;
-  /* border: 1px solid red; */
 }
 /* --------------BECAUSE---------------- */
 #section-because {
@@ -368,37 +354,32 @@ nav {
   object-fit: cover;
   object-position: 0 69%;
 }
-/* .bottom-because {
-} */
 
 #excell-title {
   font-weight: 200;
-  margin: 0 0 -1rem 6vw;
+  margin-left: 6vw;
 }
 .because-excell {
   display: block;
   width: fit-content;
   list-style-type: "-  ";
-  /* color: red; */
   margin: 1vw auto 5vw;
 }
 .because-excell li {
   line-height: 1.8rem;
 }
-/* -----AREAS----- */
+/* ------------AREAS---------------- */
 #section-areas {
   background-color: rgb(87, 182, 223);
-  /* color: var(--light-grey); */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-/* .top-areas {
-} */
+
 #areas-title {
   width: fit-content;
-  margin: 4vh auto;
+  margin: 0 auto 2vh;
 }
 
 .areas {
@@ -408,12 +389,12 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3vw;
+  gap: 2vw;
   margin: 0 auto;
 }
 .areas-item {
   width: 9.5rem;
-  height: 11vw;
+  height: 10vw;
   max-height: 3.3rem;
   display: flex;
   align-items: center;
@@ -448,9 +429,8 @@ nav {
 
 #section-services {
   background-color: var(--dark-blue);
-  height: calc(100vh - 3.5rem);
-  margin-bottom: 2rem;
-  /* padding-top: 9vh; */
+  margin-bottom: 0;
+  height: calc(100vh - 3rem);
 }
 #title-services {
   display: block;
@@ -459,19 +439,18 @@ nav {
   color: var(--light-rezedo);
   font-family: "Exo 2", sans-serif;
   text-transform: capitalize;
-  /* z-index: 100; */
 }
 #services-container {
-  position: absolute;
-  top: 10%;
+  position: relative;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 100%;
+  height: 98vw;
+  width: 98vw;
   max-width: 870px;
-  height: 61.5vh;
-  border: 2px solid red;
+  border: 1px solid red;
   border-radius: 30px;
   background-color: transparent;
   overflow: hidden;
@@ -482,9 +461,10 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 61.5vh;
-  background: url("./assets/serv-back.jpg") no-repeat center center/ cover;
+  height: 100%;
+  background: url("./assets/serv-back.jpg") no-repeat center center / 240%;
 }
+
 #hex {
   position: absolute;
   top: 0;
@@ -492,12 +472,12 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
-  width: 21.5rem;
-  height: 21.5rem;
   background: url("./assets/hex.png") no-repeat center / cover;
   border-radius: 50%;
   animation: spin 50s linear infinite;
-  /* z-index: 0; */
+  width: 69vh;
+  height: 69vh;
+  z-index: 0;
 }
 
 #hex:hover,
@@ -515,10 +495,9 @@ nav {
 
 .subtitle {
   position: absolute;
-  width: 9rem;
+  width: 23.5vh;
   height: fit-content;
   text-align: center;
-  /* padding: 2.7rem 0; */
   font-size: 1rem;
   font-family: "Exo 2", sans-serif;
   font-weight: 600;
@@ -529,36 +508,35 @@ nav {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.95),
     -2px -2px 4px rgba(0, 0, 0, 0.95), 0px 0px 8px rgba(0, 0, 0, 0.8),
     2px -2px 4px rgba(0, 0, 0, 0.95), -2px 2px 4px rgba(0, 0, 0, 0.95);
-  /* border: 1px solid red; */
 }
 
 #subtitle1 {
-  top: 4.1rem;
-  left: 9.3rem;
+  top: 10.5vh;
+  left: 22.8vh;
 }
 #subtitle2 {
-  top: 8.5rem;
-  left: 16.8rem;
+  top: 21.7vh;
+  left: 41.9vh;
 }
 #subtitle3 {
-  top: 17.4rem;
-  left: 16.8rem;
+  top: 43.8vh;
+  left: 41.9vh;
 }
 #subtitle4 {
-  top: 21.8rem;
-  left: 9.3rem;
+  top: 54.8vh;
+  left: 22.6vh;
 }
 #subtitle5 {
-  top: 17.4rem;
-  left: 1.5rem;
+  top: 43.8vh;
+  left: 3.5vh;
 }
 #subtitle6 {
-  top: 8.5rem;
-  left: 1.5rem;
+  top: 21.7vh;
+  left: 3.5vh;
 }
 #subtitle7 {
-  top: 12.9rem;
-  left: 9.2rem;
+  top: 32.2vh;
+  left: 22.8vh;
 }
 @keyframes antispin {
   from {
@@ -585,15 +563,17 @@ nav {
 
 .modal {
   position: absolute;
-  top: -2.2rem;
+  top: 0;
+  top: -3.3rem;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  width: 20rem;
-  height: 17rem;
+  width: 43vh;
+  height: 37vh;
   background: var(--brand-blue);
   opacity: 0.95;
+  line-height: 1.2rem;
   color: var(--dark-blue);
   text-align: center;
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -646,20 +626,17 @@ nav {
 }
 .modal h3:hover,
 .modal li:hover {
-  font-weight: 100;
-  color: var(--brand-red);
   color: white;
 }
 
 .submodal {
   position: absolute;
-  width: 17rem;
-  height: 17rem;
+  width: 39.5vh;
+  height: 37.5vh;
   padding: 1rem 1rem 0;
   background-color: var(--brand-blue);
-  opacity: 0.95;
+  opacity: 0.9;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px var(--brand-blue);
   z-index: 10;
 }
 
@@ -685,36 +662,34 @@ nav {
 }
 /* -------------FOOTER----------------- */
 footer {
-  position: sticky;
-  top: 1rem;
-  left: 0;
-  right: 0;
-  max-width: 1024px;
-  border-radius: 15px;
-  height: calc(100vh - 3.5rem);
-  margin: 0 auto 2rem;
   background-color: #fff;
+  margin: 0 auto;
+  z-index: 5;
+  height: 93vh !important;
 }
 .blanc-layer {
   position: absolute;
   top: 0;
   width: 100vw;
   max-width: 1024px;
-  height: calc(100vh - 3.5rem);
+  height: 93vh;
   background: url("./assets/bubbly.jpg") no-repeat center center/ cover;
   opacity: 0.5;
   z-index: -1;
   border-radius: 15px;
 }
 #footer-text {
-  width: 100%;
-  max-width: 1024px;
+  width: 100vw;
+  max-width: 800px;
   height: 28vh;
-  padding: 4vw 10vw;
+  height: 25vh;
+  padding: 4vw 8vw;
+
   font-family: "Exo 2", sans-serif;
   font-weight: 300;
   font-optical-sizing: auto;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   color: var(--brand-red);
   margin: 0 auto;
 }
@@ -724,6 +699,7 @@ footer {
 }
 .footer-img-container {
   height: 35.4vh;
+  height: 34.4vh;
   width: 100%;
   display: flex;
   place-content: center;
@@ -739,6 +715,7 @@ footer {
 }
 #footer-container {
   height: 30vh;
+  height: 28vh;
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -746,12 +723,13 @@ footer {
   align-items: center;
 }
 .location {
+  margin-top: 1rem;
   width: 27vw;
   max-width: 22rem;
   color: var(--light-grey);
   font-size: 0.9rem;
   font-weight: 400;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
 }
 .location .bold {
   margin-bottom: 0.5rem;
@@ -763,8 +741,8 @@ footer {
   padding-left: 0;
 }
 .hireus-container {
-  width: 6.9rem;
-  height: 6.9rem;
+  width: 5rem;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -773,9 +751,6 @@ footer {
   color: var(--light-grey);
   font-weight: 700;
   border-radius: 50%;
-  padding: 1rem;
-  cursor: pointer;
-
   margin: 0 23vw 0 4vw;
   border: 1px solid var(--brand-blue);
 }
@@ -823,6 +798,7 @@ footer {
   color: #c4c7c7;
   text-align: center;
   z-index: 100;
+  margin-top: 0.9rem;
 }
 
 /* xxxxxxxxxxxxxRESPONSIVExxxxxxxxxxxxx */
@@ -830,7 +806,6 @@ footer {
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 2.5rem;
-    color: var(--dark-blue);
   }
   .stack-section {
     position: relative;
@@ -838,14 +813,17 @@ footer {
     margin: 0.8rem auto 0;
   }
   /* -------------landing------------ */
+  #landing {
+    margin-bottom: 0.8rem;
+  }
   #quote {
     margin: 0 auto;
     padding: 0 0.5rem;
     top: 69vh;
+    line-height: 2rem;
   }
   #quote > h2 {
     font-size: 1.7rem;
-    color: green;
   }
   nav {
     top: 45vh;
@@ -865,33 +843,48 @@ footer {
     --position3: calc(50vw + 8rem);
   }
   /* -----------about----------- */
+
   .top-about {
     margin: 0 auto 1rem;
+  }
+  .advantages-container {
+    height: 48vh;
+  }
+
+  .box {
+    height: 14.5vh;
+    padding: 1rem 0.5rem 0.5rem;
+  }
+  .box > ul {
+    line-height: 1rem;
   }
   .bottom-about {
     margin-top: -1rem;
     padding-bottom: 2rem;
   }
   /* -----------because------------ */
+  #section-because {
+    height: 128vh;
+  }
   .top-because {
     margin-top: 1rem;
   }
-  /* ----------areas--------------- */
-  #areas-title {
-    margin-top: 1rem;
+  .ampule-container > img {
+    height: 80%;
   }
+  .bottom-because {
+    margin-top: -4rem;
+  }
+
   /* ---------services----------- */
   #section-services {
     height: 100vh;
-    /* padding-top: 9vh; */
-
-    /* padding-bottom: 2rem; */
+    margin-bottom: 0.7rem;
   }
   #title-services {
     padding-top: 1rem;
   }
   #services-container {
-    top: -5vh;
     width: 98vw;
     height: 29.4rem;
   }
@@ -899,14 +892,10 @@ footer {
     background-size: 240%;
   }
   #hex {
+    position: absolute;
     width: 92vw !important;
     height: 92vw !important;
-  }
-  .modal {
-    width: 20.3rem;
-    height: 17.4rem;
-    /* width: 90vw; */
-    /* height: 78vw; */
+    top: 0;
   }
   .subtitle {
     width: 30vw;
@@ -943,55 +932,88 @@ footer {
     left: 30.7vw;
   }
 
+  .modal {
+    height: 56.5vw;
+    width: 65vw;
+    top: -11vh;
+  }
+  .modal h3 {
+    width: 40vw;
+    font-size: 4.3vw;
+    margin-bottom: 6vw;
+  }
+  .ul-container {
+    height: 34vw;
+    width: 45vw;
+  }
+  .modal ul {
+    width: 45vw;
+  }
+  .modal li {
+    font-size: 3.5vw;
+    line-height: 4.2vw;
+  }
   .submodal {
-    top: 31.6rem !important;
+    bottom: -6rem;
     left: 0 !important;
     right: 0;
     margin: auto;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-    width: 18rem;
+    width: 65vw;
     height: fit-content;
+    padding: 0.5rem 0.1rem 0 0.1rem;
     border-radius: 5px;
   }
   .cls-btn {
     top: 0.3rem;
   }
   .submodal h3 {
-    width: 12rem;
+    width: 16rem;
+    max-width: fit-content;
     margin: 1.2rem auto 0.2rem;
   }
   .submodal p {
-    width: 18rem;
+    width: 100%;
     font-size: 0.9rem;
     text-align: unset;
-    padding: 1vh 5vh;
+    padding: 0 2vh 0.5vh;
   }
   /*------------footer------------- */
   footer {
-    margin: 1.8rem auto 1rem;
-    height: 92.5vh;
-    z-index: 5;
+    height: 94vh !important;
   }
-  #footer-text {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
+  .blanc-layer {
+    height: 94vh;
   }
 
-  .hireus-container {
-    width: 23vw;
-    height: 23vw;
-    margin: 0 23vw 0 4vw;
+  #made-by {
+    margin-top: 1.6rem;
   }
 }
-
 /* --------------tablet-------------- */
 @media screen and (min-width: 480px) and (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
   }
-  nav {
-    top: calc(70vh - 39.5vw);
+  p {
+    font-size: 0.9rem;
   }
+
+  /* -------------landing------------ */
+
+  #quote {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    top: 69vh;
+    line-height: 2rem;
+  }
+  #quote > h2 {
+    font-size: 1.7rem;
+  }
+
+  nav {
+    top: calc(75vh - 39.5vw);
+  }
+
   #nav-why {
     --position1: 17rem;
     --position2: 19rem;
@@ -1006,11 +1028,11 @@ footer {
     --position2: 21rem;
     --position3: 23rem;
   }
+
   /* -----------about----------- */
   #about {
     padding: 0;
   }
-
   .top-about {
     margin: 0 auto 1rem;
   }
@@ -1019,7 +1041,7 @@ footer {
   }
   .box {
     height: 6.2rem;
-    padding: 0.5rem;
+    padding: 0.7rem 0.5rem 0;
   }
   .box > ul {
     line-height: 1rem;
@@ -1028,109 +1050,75 @@ footer {
     margin-top: -1rem;
     padding-bottom: 2rem;
   }
+  /* ----------because---------- */
+
+  .ampule-container > img {
+    height: 80%;
+  }
+  .bottom-because {
+    margin-top: -3rem;
+    padding-bottom: 2rem;
+  }
+  .bottom-because ul {
+    margin-top: -0.2rem;
+  }
+  .bottom-because li {
+    line-height: 1.5rem;
+  }
   /* -----------areas----------- */
-  #areas-title {
-    margin: 2vh auto 1vh;
+  .areas-item {
+    height: 7.9vh;
   }
   /* ---------services----------- */
   #section-services {
-    margin-bottom: 1.3rem;
-    padding-top: 1vh;
+    height: 92vh;
+  }
+  #title-services {
+    padding-top: 0;
   }
   #services-container {
-    top: -11vh;
+    height: 75vh;
     width: 98vw;
-    height: 29.4rem;
   }
   #services-background {
-    height: 39.5rem;
-  }
-  #hex {
-    width: 27.5rem;
-    height: 27.5rem;
+    background-size: 175vh;
   }
 
-  .modal-container {
-    top: -7vh;
+  .modal {
+    width: 48vh;
+    height: 41vh;
+    top: -6.5vh;
   }
   .submodal {
-    top: 66vh !important;
+    top: 67.8vh !important;
     left: 0 !important;
     right: 0;
     margin: auto;
-    width: 18rem;
+    width: 60vh;
     height: fit-content;
-    padding: 1vh 1vh 0;
-    padding: 0;
+    padding: 0.5rem 0.1rem 0 0.1rem;
+
     border-radius: 5px;
   }
   .cls-btn {
     top: 0.3rem;
   }
   .submodal h3 {
+    width: 17rem;
     margin: 1.2rem auto 0.2rem;
   }
   .submodal p {
-    width: 18rem;
+    width: 100%;
     text-align: unset;
-    padding: 1vh 5vh;
-
+    padding: 0 2.5vh 0.5vh;
     font-size: 0.9rem;
-    /* border: 1px solid red; */
-  }
-  /* .submodal {
-    top: 30rem !important;
-    left: 0 !important;
-    right: 0;
-    margin: auto;
-    padding: 1rem;
-    width: 20rem;
-    height: fit-content;
-    border-radius: 5px;
-  }
-  .cls-btn {
-    top: 0.3rem;
-  }
-  .submodal h3 {
-    margin: 0.5rem auto 0.4rem;
-  }
-  .submodal p {
-    width: 18rem;
-    font-size: 0.9rem;
-    padding: 0;
-  }
-      footer {
-    margin: 1.8rem auto 1rem;
-    height: 92.5vh;
-    z-index: 5;
-  }
-  #footer-text {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-  }
- */
-  /* ------------footer----------- */
-  footer {
-    margin: 1.8rem auto 1rem;
-    height: 92.5vh;
-    z-index: 5;
-  }
-  #footer-text {
-    /* font-size: 1.2rem; */
-    font-size: 4vw;
-    line-height: 4.5vw;
-    padding: 2rem 12vw;
-    /* border: 1px solid red; */
   }
 }
 
 /* ------------desktop-------------- */
 @media screen and (min-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
   nav {
-    top: 30.2vh;
+    top: 25.1vh;
   }
   #nav-why {
     --position1: 17rem;
@@ -1146,99 +1134,72 @@ footer {
     --position2: 21rem;
     --position3: 23rem;
   }
-  /*  .advantages-container {
-    margin: 2rem auto;
+  #quote {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+    top: 69vh;
+    line-height: 2rem;
   }
-  .box > ul > li {
-    font-size: 1rem;
+  #quote > h2 {
+    font-size: 1.7rem;
+  }
+  /* -----------about----------- */
+  #about {
     padding: 0;
-    margin: 0 0 0.5rem 0.5rem;
   }
-
-  #tete {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right 50%;
-    border-radius: 0.3rem;
-    opacity: 0.8;
+  .top-about {
+    margin: 0 auto 1rem;
   }
-
- 
-  .because-excell {
-    width: 13rem;
+  .advantages-container {
+    height: 48vh;
   }
-  .areas {
-    gap: 1.5rem;
-*/
+  .box {
+    height: 6.2rem;
+    padding: 0.7rem 0.5rem 0;
+  }
+  .box > ul {
+    line-height: 1rem;
+  }
+  .bottom-about {
+    margin-top: -1rem;
+    padding-bottom: 2rem;
+  }
+  /* ----------because---------- */
 
+  .ampule-container > img {
+    height: 80%;
+  }
+  .bottom-because {
+    margin-top: -3rem;
+    padding-bottom: 2rem;
+  }
+  .bottom-because ul {
+    margin-top: -0.2rem;
+  }
+  .bottom-because li {
+    line-height: 1.5rem;
+  }
+  /* -----------areas----------- */
+  .areas-item {
+    height: 7.9vh;
+  }
   /* ---------services----------- */
 
   #section-services {
-    margin-bottom: 1.3rem;
-    padding-top: 0.5rem;
+    height: 92vh;
+  }
+  #title-services {
+    padding-top: 0;
   }
   #services-container {
-    /* background-size: 240%; */
+    height: 75vh;
     width: 98vw;
-    height: 29.4rem;
   }
   #services-background {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 39.5rem;
-  }
-  #hex {
-    width: 27.5rem;
-    height: 27.5rem;
-  }
-  .modal-container {
-    top: -0.7rem;
-  }
-  .submodal p {
-    padding: 0;
-    /* text-align: unset; */
-  }
-  /* -------------footer--------*/
-  /* footer {
-    margin: 1.8rem auto 1rem;
-    height: 92.5vh;
-    z-index: 5;
-  } */
-  #footer-text {
-    font-size: 1.9rem;
-    line-height: 2.1rem;
-    padding: 2rem 12vw;
+    background-size: 175vh;
   }
 
-  /* border: 1px solid red; */
-  /* #services-container {
-    min-height: 69vh;
-  }
-  .submodal {
-    border-radius: 50%;
-    width: 16.9rem;
-    height: 16.3rem;
-    padding: 2rem;
-  }
-  .cls-btn {
-    top: 0.3rem;
-  }
-  .submodal h3 {
-    margin: 0.5rem auto 0.4rem;
-  }
   .submodal p {
-    width: 14rem;
-    font-size: 0.9rem;
     padding: 0;
-    margin-left: -0.7rem;
-  }
-*/
-}
-@media screen and (min-width: 1024px) {
-  .hireus-container {
-    margin: 0 14.7rem 0 2.5rem;
-    margin: 0 20rem 0 0;
   }
 }
