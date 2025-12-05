@@ -1,12 +1,40 @@
-# React + Vite
+# MicroCro – External App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live:** [microcro.com](https://microcro.com)
 
-Currently, two official plugins are available:
+MicroCro is a fully responsive front-end project designed to showcase modern UI development and integration.  
+It demonstrates clean, maintainable code with a focus on scalability and performance.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔹 Project Overview
+| Feature         | Description |
+|-----------------|-------------|
+| Type            | External App |
+| Focus           | Front-End Development |
+| Live Link       | [microcro.com](https://microcro.com) |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+- React  
+- Vite  
+- JavaScript (ES6+)  
+- CSS3  
+- NPM (Node)
+
+---
+
+## ✨ Features
+- Fully responsive layout for all screen sizes  
+- Dynamic animated background for a modern visual effect  
+- Custom-built navigation menu with unique styling and interactions  
+- Lightweight and optimized for fast loading  
+- Clean, scalable project structure  
+- Polished UI focused on usability and aesthetics  
+
+---
+
+## 📫 Contact
+- **Email:** scepan.office@webartforge.com  
+- **GitHub:** [https://github.com/scepan74](https://github.com/scepan74)
