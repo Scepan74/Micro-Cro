@@ -1,37 +1,37 @@
-# MicroCro – External App
+# MicroCro – Front-End App
 
 **Live:** [microcro.com](https://microcro.com)
 
-MicroCro is a fully responsive front-end project designed to showcase modern UI development and integration.  
-It demonstrates clean, maintainable code with a focus on scalability and performance.
+MicroCro is a lightweight, fully responsive front-end project created to establish a professional online presence for a Contract Research Organization (CRO).  
+It showcases services, builds credibility, and demonstrates polished UI/UX design while emphasizing performance and maintainable code.
 
 ---
 
 ## 🔹 Project Overview
 | Feature         | Description |
 |-----------------|-------------|
-| Type            | External App |
-| Focus           | Front-End Development |
+| Type            | Front-End App / Service Showcase |
+| Focus           | Responsive UI & Professional Web Presence |
 | Live Link       | [microcro.com](https://microcro.com) |
+| Target Audience | Recruiters, clients, and tech professionals |
 
 ---
 
 ## 🛠️ Tech Stack
-- React  
-- Vite  
-- JavaScript (ES6+)  
-- CSS3  
-- NPM (Node)
+- **Front-End:** React, JavaScript (ES6+), CSS3, Vite  
+- **Animations & Effects:** Pure CSS3 (transitions, keyframes) – no external libraries  
+- **Package Management:** NPM (Node.js)  
+- **Performance & Optimization:** Modular structure, fast loading, and accessibility-focused  
 
 ---
 
-## ✨ Features
-- Fully responsive layout for all screen sizes  
-- Dynamic animated background for a modern visual effect  
-- Custom-built navigation menu with unique styling and interactions  
-- Lightweight and optimized for fast loading  
-- Clean, scalable project structure  
-- Polished UI focused on usability and aesthetics  
+## ✨ Key Highlights
+- Fully responsive design optimized for all devices and screen sizes  
+- Modern, polished UI/UX conveying professionalism and trustworthiness  
+- Dynamic, interactive elements implemented entirely with pure CSS  
+- Lightweight and optimized for fast loading and smooth user experience  
+- Clean, maintainable code structure demonstrating best front-end practices  
+- Serves as a showcase for translating business/service goals into an effective web presence  
 
 ---
 
