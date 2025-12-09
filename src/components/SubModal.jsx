@@ -5,9 +5,7 @@ const SubModal = ({ content, closeSub }) => {
       className="submodal"
       style={{
         top: `calc(50% - ${content.coords.top}vh)`,
-        // top: "50%",
         left: `calc(50% - ${content.coords.left}vh)`,
-        // left: "50%",
       }}
     >
       <IoMdCloseCircle onClick={closeSub} className="cls-btn" />

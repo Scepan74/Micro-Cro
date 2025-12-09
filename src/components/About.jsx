@@ -7,8 +7,8 @@ const About = () => {
       <div className="top-about">
         <p>
           <img id="landing-logo" src={logo} alt="logo" />
-          is a compact, independent Clinical Research Organisation providing
-          excellence of services through cost-effective solutions.
+          is a compact, independent Contract Research Organisation providing
+          excellence in services through cost-effective solutions.
         </p>
       </div>
       <div className="advantages-container">
@@ -24,7 +24,7 @@ const About = () => {
           </div>
           <div className="box" id="box-2">
             <ul>
-              <li className="inline"> Comunication with Authorities</li>
+              <li className="inline"> Communication with Authorities</li>
               <li className="inline"> Licensing</li>
             </ul>
           </div>
@@ -44,9 +44,9 @@ const About = () => {
       </div>
       <div className="bottom-about">
         <p>
-          Advantages we offer are meticulous recruitment, site speed and short
-          timelines for initial Regulatory Authorities approvals. In addition,
-          we provide a full administrative support such as certified
+          Advantages we offer include meticulous recruitment, site speed and
+          short timelines for initial Regulatory Authorities approvals. In
+          addition, we provide a full administrative support such as certified
           translations of documentation, etc.
         </p>
       </div>

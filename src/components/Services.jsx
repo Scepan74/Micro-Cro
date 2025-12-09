@@ -8,7 +8,7 @@ const Services = () => {
     feasibilities: {
       title: "Feasibilities",
       paragraph:
-        "Stand-alone feasibility assessment is the most comprehensive and complex type of feasibility analysis. Performed before the study, it collects and analyse critical information for setting a strong basis for clinical trial success.",
+        "Stand-alone feasibility assessment is the most comprehensive and complex type of feasibility analysis. Performed before the study, it collects and analyzes critical information for setting a strong basis for clinical trial success.",
       coords: { top: 41.2, left: 53.9 },
       text: [
         {
@@ -22,7 +22,7 @@ const Services = () => {
         {
           title: "disease epidemiology",
           paragraph:
-            "Stand-alone feasibility assessment is the most comprehensive and complex type of feasibility analysis. Performed before the study, it collects and analyse critical information for setting a strong basis for clinical trial success.",
+            "Disease epidemiology analysis in clinical research feasibility assesses the disease's prevalence, incidence, distribution, and risk factors in target populations to estimate patient recruitment potential and trial viability.",
 
           coords: { top: 4, left: -14.5 },
         },
@@ -30,7 +30,7 @@ const Services = () => {
         {
           title: "competitive market research",
           paragraph:
-            "We will analyse market about patient recruitment strategies, optimal study designs, and operational trial efficiency. This way we enhance enrollment, shorten timelines, and gain an edge in the competitive clinical research landscape.",
+            "We will analyze market about patient recruitment strategies, optimal study designs, and operational trial efficiency. This way we enhance enrollment, shorten timelines, and gain an edge in the competitive clinical research landscape.",
           coords: { top: 4, left: 53.9 },
         },
 
@@ -145,7 +145,7 @@ const Services = () => {
     monitoring: {
       title: "Monitoring (phases II-IV)",
       paragraph:
-        " MICRO will performe visits at all trial phases. Monitoring include proper informed consent procedures, compliance with protocol, GCP/ICH Guidelines and other applicable regulatory requirements and assurance of good site performance.",
+        " MICRO will perform visits at all trial phases. Monitoring includes proper informed consent procedures, compliance with protocol, GCP/ICH Guidelines and other applicable regulatory requirements and assurance of good site performance.",
       coords: { top: 41.2, left: 53.9 },
       text: [
         {
@@ -283,7 +283,7 @@ const Services = () => {
             id="subtitle5"
             onClick={() => modalHandler("licensing")}
           >
-            Licences
+            Licenses
           </h3>
           <h3
             className="subtitle"

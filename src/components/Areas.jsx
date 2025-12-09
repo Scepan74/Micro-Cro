@@ -62,11 +62,11 @@ const Areas = () => {
           Regardless of your level of experience and/or resources, we remain
           equally meticulous in our performance. Micro promotes ongoing
           communication. You will be encouraged to address any issue or need for
-          clarification throughout whole course. Assistence will be provided
+          clarification throughout whole course. Assistance will be provided
           with each and every step of the process so we optimize it into a solid
           monitoring program providing 24/7/365 access to enrolment and
           compliance. Our veteran CRA team maintains data integrity, security
-          and farmcovigilance.
+          and pharmacovigilance.
         </p>
       </div>
     </section>

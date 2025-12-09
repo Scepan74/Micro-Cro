@@ -9,7 +9,7 @@ const Because = () => {
 
           <p>
             ...MICRO's boutique scale operation allows us unflinching focus and
-            unmatched efficiency comparing to corporate behemoths.
+            unmatched efficiency compared to corporate behemoths.
             <br />
             Our veteran team share decades of experience and what they do, they
             do the best in the business.
@@ -24,12 +24,12 @@ const Because = () => {
           <img src={ampule} alt="ampule" />
         </div>
         <div className="bottom-because">
-          <h2 id="excell-title">We excell in:</h2>
+          <h2 id="excell-title">We excel in:</h2>
           <ul className="because-excell">
             <li>Therapeutic expertise</li>
-            <li>CRA (personell) proficiency</li>
+            <li>CRA (personnel) proficiency</li>
             <li>CT contingency planning </li>
-            <li>Cost effectivness</li>
+            <li>Cost effectiveness</li>
           </ul>
         </div>
       </section>
