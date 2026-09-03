@@ -13,7 +13,7 @@ It showcases services, builds credibility, and demonstrates polished UI/UX desig
 | Type            | Front-End App / Service Showcase |
 | Focus           | Responsive UI & Professional Web Presence |
 | Live Link       | [microcro.com](https://microcro.com) |
-| Target Audience | Recruiters, clients, and tech professionals |
+
 
 ---
 
@@ -27,7 +27,7 @@ It showcases services, builds credibility, and demonstrates polished UI/UX desig
 
 ## ✨ Key Highlights
 - Fully responsive design optimized for all devices and screen sizes  
-- Modern, polished UI/UX conveying professionalism and trustworthiness  
+- Modern, polished UI/UX 
 - Dynamic, interactive elements implemented entirely with pure CSS  
 - Lightweight and optimized for fast loading and smooth user experience  
 - Clean, maintainable code structure demonstrating best front-end practices  
